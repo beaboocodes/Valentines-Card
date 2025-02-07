@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Yes</title>
+    <style>
+        body {
+            background-color: #ffe6ee;
+            height: 10vh;
+            margin: 10;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-top: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .tenor-gif-embed {
+            width: 100%;
+            height: 40vh;
+        }
+        .btn {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .btn a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #fc46aa;
+            color: white;
+            border-radius: 5px;
+            position: relative;
+        }
+    </style>
+    <script>
+        function moveButton() {
+            const button = document.getElementById('no-thanks');
+            const container = document.querySelector('.container');
+            const maxX = container.offsetWidth - button.offsetWidth;
+            const maxY = container.offsetHeight - button.offsetHeight;
+            const x = Math.floor(Math.random() * maxX);
+            const y = Math.floor(Math.random() * maxY);
+            button.style.left = x + 'px';
+            button.style.top = y + 'px';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1><p style="color: #fc46aa">My Alfie, My Love - Will You Be My Valentine?</p></h1>
+    </header>
+    <div class="container">
+        <div class="tenor-gif-embed" data-postid="14381004600279462470" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+            <a href="https://tenor.com/view/be-my-valentine-will-you-be-my-valentine-valentine-happy-valentines-day-valentine-day-gif-14381004600279462470">Be-my-valentine Will-you-be-my-valentine GIF</a> from <a href="https://tenor.com/search/be-my-valentine-gifs">Be-my-valentine GIFs</a>
+        </div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </div>
+    <p>I asked you once, I asked you twice,
+        You shook your head - not very nice!
+        But rules are rules, and guess what, dear?
+        Too many "No’s" mean Yes is here!
+        So don’t resist, don’t even whine,
+        You’re stuck with me - be my Valentine!</p>
+    <div class="btn">
+        <a href="yes.html">Forever and ever</a>
+        <a id="no-thanks" href="javascript:void(0);" onclick="moveButton()">No Thanks</a>
+    </div>
+</body>
+</html>
